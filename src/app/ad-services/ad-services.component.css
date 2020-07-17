@@ -1,0 +1,35 @@
+.row
+{
+    display: flex;
+    margin: 20px 0 20px 0;
+}
+
+a:hover
+{
+    color: black
+}
+
+.col{
+    flex: 1;
+    text-align: center;
+    background-color: rgb(144, 144, 144);
+  }
+
+  .col p{
+    color: white;
+  }
+  .col h3{
+    color: white;
+  }
+  .col:hover{
+    background-color:rgb(95, 94, 94);
+  }
+  
+  .bi
+  {
+    color: white;
+  }
+  .bi:hover
+  {
+    color: Black;
+  }
