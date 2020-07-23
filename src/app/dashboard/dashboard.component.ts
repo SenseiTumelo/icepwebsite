@@ -17,4 +17,10 @@ export class DashboardComponent implements OnInit {
   getStud(){
     this.api.getAllReg().subscribe((data: any) => {this.regStud = data; console.log(data);});
   }
+ 
+  _opened: boolean = true;
+
+  _toggleSidebar() {
+    this._opened = !this._opened;
+  }
 }

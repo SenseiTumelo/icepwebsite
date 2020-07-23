@@ -19,6 +19,8 @@ import { ApplicationPageComponent } from './application-page/application-page.co
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { EmailFeedbackComponent } from './email-feedback/email-feedback.component';
+import { RegstudComponent } from './dashboard/regstud/regstud.component';
+import { AdminprofComponent } from './dashboard/adminprof/adminprof.component';
 
 const routes: Routes = [
   {path:  '' , redirectTo: 'home-page', pathMatch: 'full'},
@@ -39,7 +41,8 @@ const routes: Routes = [
   {path: 'register-page', component: RegisterPageComponent},
   {path: 'application-page', component: ApplicationPageComponent},
   {path: 'dashboard', component: DashboardComponent},
-
+  {path: 'dashboard/adminprof', component: AdminprofComponent},
+  {path: 'dashboard/regstud', component: RegstudComponent},
   {path: 'gallery', component: GalleryComponent},
   {path: 'email-feedbac', component: EmailFeedbackComponent},
 

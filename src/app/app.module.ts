@@ -7,6 +7,7 @@ import { FormsModule} from '@angular/forms';
 // added
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
+import { SidebarModule } from 'ng-sidebar';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -32,6 +33,8 @@ import { AdminLoginPageComponent } from './admin-login-page/admin-login-page.com
 import { EmailFeedbackComponent } from './email-feedback/email-feedback.component';
 import { from } from 'rxjs';
 import { ApiService } from './api.service';
+import { RegstudComponent } from './dashboard/regstud/regstud.component';
+import { AdminprofComponent } from './dashboard/adminprof/adminprof.component';
 
 
 
@@ -57,6 +60,8 @@ import { ApiService } from './api.service';
     GalleryComponent,
     AdminLoginPageComponent,
     EmailFeedbackComponent,
+    RegstudComponent,
+    AdminprofComponent,
      ],
   imports: [
     BrowserModule,
@@ -65,7 +70,8 @@ import { ApiService } from './api.service';
     NgbModule,
     ReactiveFormsModule,
     HttpClientModule,
-    RouterModule
+    RouterModule,
+    SidebarModule.forRoot()
   ],
   providers: [ApiService],
   bootstrap: [AppComponent]

@@ -6,17 +6,18 @@
 
 
     <!-- Sidebar -->
-    <div class="sidenav bg-dark">
+    <!--div class="sidenav bg-dark">
             <a class="nav-link" routerLink="/dashboard"  routerLinkActive="router-link-active" >Dashboard</a>
             <a class="nav-link" routerLink="/login-page"  routerLinkActive="router-link-active" >Log</a>
             <a class="nav-link" routerLink="/register-page"  routerLinkActive="router-link-active" >Report</a>
             <a class="nav-link" routerLink="/application-page"  routerLinkActive="router-link-active" >Apply</a>
 
-            <!-- Footer -->
+            <Footer>
             <div class="footer">
                 <app-footer></app-footer>
             </div>
-    </div>
+    </div-->
+
 
     <!-- main -->
     <div class="applicant-card">
@@ -39,4 +40,25 @@
 
 
 </div>
+ <ng-sidebar-container>
+
+      <!-- A sidebar -->
+      <ng-sidebar [(opened)]="_opened">
+        <p>Sidebar contents</p>
+        <li>
+          <a routerLink="/dashboard/adminprof">Profile</a>
+        </li>
+        <li>
+          <a routerLink="/dashboard/regstud">Registered Students</a>
+        </li>
+
+
+      </ng-sidebar>
+
+      <!-- Page content -->
+      <div ng-sidebar-content>
+        <button (click)="_toggleSidebar()">Toggle sidebar</button>
+      </div>
+
+    </ng-sidebar-container>
 
